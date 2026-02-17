@@ -8,6 +8,7 @@ import { registerChaiLibrary } from "@chaibuilder/next/runtime-client";
 import type { ChaiLoggedInUser } from "@chaibuilder/next/types";
 import { useCallback, useEffect, useState } from "react";
 import { LoginScreen } from "./login";
+import { builderThemePresets } from "./rl-theme";
 
 registerCustomBlocks();
 registerChaiLibrary("chai-library", defaultChaiLibrary());
@@ -106,7 +107,8 @@ export default function Editor() {
 
   return (
     <ChaiWebsiteBuilder
-      flags={{ dragAndDrop: true, ai: true }}
+      themePresets={builderThemePresets}
+      flags={{ dragAndDrop: true }}
       currentUser={user}
       autoSave
       autoSaveActionsCount={5}

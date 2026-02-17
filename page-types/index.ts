@@ -1,6 +1,6 @@
 import { registerChaiPageType } from "@chaibuilder/next/runtime";
-import { BlogPageType } from "./blog";
+//import { BlogPageType } from "./blog";
 
 export const registerPageTypes = () => {
-  registerChaiPageType(BlogPageType.key, BlogPageType);
+  //registerChaiPageType(BlogPageType.key, BlogPageType);
 };
