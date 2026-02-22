@@ -7,8 +7,10 @@ import { registerChaiGlobalDataProvider } from "@chaibuilder/next/runtime";
  */
 const globalDataProvider = async () => {
   return {
-    name: "ChaiBuilder",
-    description: "ChaiBuilder is a Low Code website builder.",
+    name: process?.env?.RL_SITE_NAME ?? "ReVoiceChat",
+    title: process?.env?.RL_SITE_TITLE ?? "ReVoiceChat",
+    description: process?.env?.RL_SITE_TITLE ?? "ReVoiceChat",
+    logo: process?.env?.RL_SITE_LOGO ?? "/favicon.ico",
   };
 };
 

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./public.css";
 
 export const metadata: Metadata = {
-  title: "Chai Builder",
-  description: "Chai Builder",
+  title: process?.env?.RL_SITE_TITLE ?? "ReVoiceChat",
+  description: process?.env?.RLL_SITE_DESCRIPTION ?? "ReVoiceChat",
 };
 
 export default async function RootLayout({

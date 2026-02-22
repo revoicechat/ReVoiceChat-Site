@@ -5,8 +5,8 @@ import { Geist } from "next/font/google";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ChaiBuilder Editor",
-  description: "ChaiBuilder Editor",
+  title: `${process?.env?.RL_SITE_NAME ?? "ReVoiceChat"} Editor`,
+  description: `${process?.env?.RL_SITE_NAME ?? "ReVoiceChat"} Editor`,
 };
 
 export default function RootLayout({
