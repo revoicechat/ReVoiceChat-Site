@@ -1,6 +1,7 @@
 // @ts-nocheck
 const useFluidCursor = () => {
     const canvas = document.getElementById('fluid');
+    if(!canvas) return;
     resizeCanvas();
   
     //try to adjust settings
