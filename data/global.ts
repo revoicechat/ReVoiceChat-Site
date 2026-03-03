@@ -9,7 +9,7 @@ const globalDataProvider = async () => {
   return {
     name: process?.env?.RL_SITE_NAME ?? "ReVoiceChat",
     title: process?.env?.RL_SITE_TITLE ?? "ReVoiceChat",
-    description: process?.env?.RL_SITE_TITLE ?? "ReVoiceChat",
+    description: process?.env?.RL_SITE_DESCRIPTION ?? "ReVoiceChat",
     logo: process?.env?.RL_SITE_LOGO ?? "/favicon.ico",
   };
 };
