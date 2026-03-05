@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import fluidCursor from './settings';
 
-const FluidCursor = ({children}) => {
+const FluidCursor = ({children}:any) => {
   useEffect(() => {
     fluidCursor();
   }, []);
