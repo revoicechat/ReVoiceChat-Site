@@ -11,6 +11,9 @@ const globalDataProvider = async () => {
     title: process?.env?.RL_SITE_TITLE ?? "ReVoiceChat",
     description: process?.env?.RL_SITE_DESCRIPTION ?? "ReVoiceChat",
     logo: process?.env?.RL_SITE_LOGO ?? "/favicon.ico",
+    
+    social_github: process?.env?.RL_SOCIAL_GITHUB ?? "",
+    github_project: process?.env?.RL_GITHUB_PROJECT ?? "",
   };
 };
 
