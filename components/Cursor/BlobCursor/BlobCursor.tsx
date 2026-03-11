@@ -44,7 +44,7 @@ const BlobCursor = ({ children, blobType = 'circle', fillColor = '#EB6AFF' }) =>
 
   return (
     <div className="relative" onMouseMove={handleMove} onTouchMove={handleMove}>
-      <div className='absolute top-0 left-0' style={{ width: '100%', height: '100%' }}>
+      <div className='absolute top-0 left-0' style={{ zIndex:-1, width: '100%', height: '100%' }}>
         <svg style={{ position: 'absolute', width: 0, height: 0 }}>
           <filter id='blob'>
             {/*<feGaussianBlur in='SourceGraphic' result='blur' stdDeviation='30' />
